@@ -28,6 +28,7 @@ Project was fully created on the gitlab. All commits and releases are avaliable 
 * Material UI
 * AWS ECS
 * AWS ECR
+* AWS LoadBalancer
 * AWS RDS
 * Docker
 * Gitlab CI/CD
