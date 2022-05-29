@@ -4,42 +4,15 @@ Project was fully created on the gitlab. All commits and releases are avaliable 
 
 ## Table of contents
 * [Status](#status)
-* [Instruction](#instruction)
 * [Technologies](#technologies)
 * [Routes](#routes)
+* [Instruction](#instruction)
 * [Authors](#authors)
 * [License](#license)
 * [Contact](#contact)
 
 ## Status
 #### Ended
-
-## Instruction
-#### Pull the project
-```
-git clone https://gitlab.com/dens-szkot/music-shop-nwta.git
-cd music-shop-nwta
-```
-#### Initialize database
-* Install postgreSQL (pgAdmin)
-* Create server and database (music-shop)
-* Generate connection string to the database
-#### Install and generate the packages
-```
-npm install --global yarn
-yarn
-```
-#### Create .env file as below
-```
-DATABASE_URL = "postgresql://'login':'password'@localhost:5432/music-shop?schema=public"
-NEXTAUTH_URL = "http://localhost:8080"
-NEXTAUTH_URL_INTERNAL = "http://localhost:8080"
-SECRET = "WAJFUIA22189hfWAF2"
-```
-#### Start the project
-```
-yarn dev
-```
 
 ## Technologies
 #### Project is created with:
@@ -67,6 +40,33 @@ yarn dev
 * /order-history - order history
 * /admin-page - admin panel
 * /settings - account settings
+
+## Instruction
+#### Pull the project
+```
+git clone https://gitlab.com/dens-szkot/music-shop-nwta.git
+cd music-shop-nwta
+```
+#### Initialize database
+* Install postgreSQL (pgAdmin)
+* Create server and database (music-shop)
+* Generate connection string to the database
+#### Install and generate the packages
+```
+npm install --global yarn
+yarn
+```
+#### Create .env file as below
+```
+DATABASE_URL = "postgresql://'login':'password'@localhost:5432/music-shop?schema=public"
+NEXTAUTH_URL = "http://localhost:8080"
+NEXTAUTH_URL_INTERNAL = "http://localhost:8080"
+SECRET = "WAJFUIA22189hfWAF2"
+```
+#### Start the project
+```
+yarn dev
+```
 
 ## Authors
 #### Piotr Wrobel
