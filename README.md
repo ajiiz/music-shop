@@ -1,6 +1,6 @@
 # music-shop-app
-Project was fully created on the gilab. All commits and releases are avaliable at 
-[repo](https://gitlab.com/dens-szkot/music-shop-nwta)
+Project was fully created on the gitlab. All commits and releases are avaliable here 
+*[LINK](https://gitlab.com/dens-szkot/music-shop-nwta)*
 
 ## Table of contents
 * [Status](#status)
