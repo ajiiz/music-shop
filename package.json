@@ -1,0 +1,53 @@
+{
+  "name": "music-shopt-nwta",
+  "private": false,
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev -p 8080",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier -write. ",
+    "db-dev-gen": "prisma generate",
+    "db-dev-push": "prisma db push",
+    "db-dev-pull": "prisma db pull",
+    "db-dev-format": "prisma format",
+    "db-dev-seed": "yarn db-dev-push && ts-node prisma/seed.ts",
+    "db-dev-reset": "prisma migrate reset",
+    "type-check": "tsc --pretty --noEmit",
+    "cypress-test": "cypress-open",
+    "cypress-run": "cypress run --browser chrome --record false --config video=false"
+  },
+  "author": "Piotr Wrobel <https://piotrwrobel.vercel.app/>, Patryk Dyrcz, Dawid Węgrzyn",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@prisma/client": "^3.9.2",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@types/bcryptjs": "^2.4.2",
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "ci": "^2.2.0",
+    "framer-motion": "^6.2.9",
+    "next": "^12.1.7-canary.19",
+    "next-auth": "^4.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.8",
+    "react-select": "^5.3.0",
+    "styled-components": "^5.3.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.17",
+    "@types/react": "17.0.39",
+    "@types/styled-components": "^5.1.22",
+    "cypress": "^9.7.0",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "12.0.10",
+    "prisma": "^3.9.2",
+    "ts-node": "10.1.0",
+    "typescript": "4.5.5"
+  }
+}

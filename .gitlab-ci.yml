@@ -1,0 +1,51 @@
+variables:
+  DOCKER_REGISTRY: 783326700975.dkr.ecr.eu-central-1.amazonaws.com
+  AWS_DEFAULT_REGION: eu-central-1
+  APP_NAME: musicshop
+  DOCKER_HOST: tcp://docker:2375
+
+image: node:16
+stages:
+  - test
+  - publish
+
+test:
+  image: cypress/browsers:node16.13.0-chrome95-ff94
+  stage: test
+  only:
+    - main
+    - develop
+  allow_failure: true
+  script:
+    - echo "DATABASE_URL=$DATABASE_URL" >> .env
+    - echo "NEXTAUTH_URL=$CYPRESS_NEXT_AUTH_URL" >> .env
+    - echo "SECRET=$SECRET" >> .env
+    - yarn
+    - yarn prisma generate
+    - yarn build
+    - yarn ci --prefer-offline
+    - yarn type-check
+    - yarn dev &
+    - yarn cypress-run
+
+publish:
+  stage: publish
+  only:
+    - main
+  allow_failure: false
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  services:
+    - docker:dind
+  before_script:
+    - echo "DATABASE_URL=$DATABASE_URL" >> .env
+    - echo "NEXTAUTH_URL=$NEXT_AUTH_URL" >> .env
+    - echo "SECRET=$SECRET" >> .env
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - docker build -t $DOCKER_REGISTRY/$APP_NAME:latest .
+    - aws ecr get-login-password | docker login --username AWS --password-stdin $DOCKER_REGISTRY
+    - docker push $DOCKER_REGISTRY/$APP_NAME:latest

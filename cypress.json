@@ -1,0 +1,10 @@
+{
+  "ignoreTestFiles": ["**/2-advanced-examples/*", "**/1-getting-started/*"],
+  "baseUrl": "http://localhost:8080",
+  "viewportWidth": 1920,
+  "viewportheight": 1080,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "requestTimeout": 60000,
+  "pageLoadTimeout": 60000
+}

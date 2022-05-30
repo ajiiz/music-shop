@@ -1,0 +1,62 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: LatoRegular;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+input:hover,
+input:focus {
+  outline: none;
+  border: none;
+}
+
+button,
+button:hover,
+button:focus,
+button:focus-visible,
+button:focus-within {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+a {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LatoBlack";
+  src: url("/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "AlluraRegular";
+  src: url("/fonts/Allura-Regular.ttf");
+}
