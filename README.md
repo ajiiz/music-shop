@@ -71,8 +71,7 @@ yarn dev
 
 ## Authors
 #### Piotr Wrobel
-[portfolio](https://www.piotrwrobel.xyz/)
-[github](https://github.com/ajiiz)
+[portfolio](https://www.pwrobel.xyz/)
 [gitlab](https://gitlab.com/ajiiz)
 #### Dawid Węgrzyn
 #### Patryk Dyrcz
