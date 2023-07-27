@@ -14,8 +14,8 @@ Welcome to the Music Shop Application repository! This is the platform for our o
 #### The Music Shop platform is built using the following technologies:
 * <b>Frontend</b>: Typescript, Nextjs, NextAuth, React Redux Toolkit, axios, styled-components, Material UI
 * <b>Backend</b>: Nextjs, PrismaORM
-* <b>Tests</b>: Cypress (E2E)
 * <b>Database</b>: PostgreSQL
+* <b>Tests</b>: Cypress (E2E)
 * <b>Serverless</b>: AWS ECS, AWS ECR, AWS LoadBalancer, AWS RDS
 * <b>Other</b>: Docker, Gitlab CI/CD
 
