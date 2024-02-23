@@ -58,8 +58,8 @@ yarn dev
 
 ## Authors
 #### Piotr Wrobel
-Dawid Węgrzyn
-atryk Dyrcz
+#### Dawid Węgrzyn
+#### Patryk Dyrcz
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
